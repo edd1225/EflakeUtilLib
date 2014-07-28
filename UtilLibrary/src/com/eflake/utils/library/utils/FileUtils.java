@@ -48,9 +48,9 @@ public class FileUtils {
 	/**
 	 * 写入内容到SD卡中的txt文本中 str为内容
 	 */
-	public void writeSDFile(String str, String fileName) {
+	public void writeSDFile(String str, String fileName,boolean isAppend) {
 		try {
-			FileWriter fw = new FileWriter(Environment.getExternalStorageDirectory().getPath() + "//" + fileName);
+			FileWriter fw = new FileWriter(Environment.getExternalStorageDirectory().getPath() + "//" + fileName,isAppend);
 			File f = new File(Environment.getExternalStorageDirectory().getPath() + "//" + fileName);
 			fw.write(str);
 			FileOutputStream os = new FileOutputStream(f);

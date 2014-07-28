@@ -10,6 +10,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 
+/**
+ * @author tang
+ *
+ */
 public class AssetUtils {
 	private static final String TAG = "AssetUtils";
 
