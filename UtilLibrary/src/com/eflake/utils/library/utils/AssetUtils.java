@@ -10,9 +10,12 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 
+
 /**
- * @author tang
- *
+ * <p>Title: AssetUtils</p>
+ * <p>Description: </p>
+ * @author	Eflake
+ * @date	2014-7-29
  */
 public class AssetUtils {
 	private static final String TAG = "AssetUtils";
