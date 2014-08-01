@@ -31,6 +31,10 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.Base64;
 
+/**
+ * @author git-collaborator
+ *
+ */
 public class BitmapUtil {
 	private static final String TAG = "BitmapUtil";
 
