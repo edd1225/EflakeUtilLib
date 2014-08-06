@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.View;
 
 public class DimensionUtils {
 	private static final String TAG = "DimensionUtils";
@@ -31,7 +32,19 @@ public class DimensionUtils {
 		builder.append("，屏幕密度DPI=").append(densityDpi);
 		return builder.toString();
 	}
-
+	
+	/**
+	 * 获取View对象高度
+	 */
+	public static int getHeight(View view) {
+		int w = View.MeasureSpec.makeMeasureSpec(0,
+				View.MeasureSpec.UNSPECIFIED);
+		int h = View.MeasureSpec.makeMeasureSpec(0,
+				View.MeasureSpec.UNSPECIFIED);
+		view.measure(w, h);
+		return view.getMeasuredHeight();
+	}
+	
 	/**
 	 * dp转px
 	 */
